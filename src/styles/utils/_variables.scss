@@ -1,7 +1,13 @@
 /* fonts */
-$font_light: 'OpenSans-Light';
-$font_main: 'OpenSans-Regular';
-$font_bold: 'OpenSans-Bold';
+$font-title: 'PFBeauSansPro-Regular';
+$font-title-light: 'PFBeauSansPro-Light';
+$font-title-semi-bold: 'PFBeauSansPro-SemiBold';
+$font-title-bold: 'PFBeauSansPro-Bold';
+$font-title-bbold: 'PFBeauSansPro-Bbook';
+
+$font: 'ProximaNova-Regular';
+$font-light: 'ProximaNova-Light';
+$font-bold: 'ProximaNova-Bold';
 
 /* font sizes*/
 $size_smaller_font: 10px;
@@ -13,12 +19,21 @@ $size_title_description_font: 30px;
 $size_title_big_font: 36px;
 
 /* color */
-$color_grey: #F4F6F2;
-$color_txt: #263238;
-$color_txt2: #78909C;
-$color_green: #38AC60;
-$color_bord: #425B67;
-$color_footer: #293B44;
-$color_error: #EB5757;
-$color_btn: #FFA000;
-$color_white: #fff;
+$default: #ffffff;
+$main: #7ac143;
+$secondary: #5d2842;
+$primary: #372d31;
+$dark: #000000;
+$pompadour: #572642;
+$prim: #d7d5d6;
+$dimgray: #6B6B6B;
+$finn: #693c56;
+$nero: #232323;
+$snow: #f9f9f9;
+$cloudy: #b2afa8;
+$sulu: #adff6c;
+$crimson: #de1a33;
+$shamrock: #029a55;
+$pacific: #019ee0;
+$grey: #808080;
+$white: #FEFEFE;

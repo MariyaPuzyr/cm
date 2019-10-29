@@ -1,29 +1,79 @@
 @font-face {
-  font-family: 'OpenSans-Regular';
-  src: url('../fonts/OpenSans-Regular.eot');
-  src: local('../fonts/OpenSans Regular'), local('OpenSans-Regular'),
-  url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/OpenSans-Regular.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'PFBeauSansPro-Regular';
+  src: url('../fonts/PFBeauSansPro-Reg.eot');
+  src: url('../fonts/PFBeauSansPro-Reg.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PFBeauSansPro-Reg.ttf') format('truetype'),
+  url('../fonts/PFBeauSansPro-Reg.woff') format('woff');
   font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
-  font-family: 'OpenSans-Bold';
-  src: url('../fonts/OpenSans-Bold.eot');
-  src: local('../fonts/OpenSans Bold'), local('OpenSans-Bold'),
-  url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/OpenSans-Bold.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'PFBeauSansPro-Light';
+  src: url('../fonts/PFBeauSansPro-Light.eot');
+  src: url('../fonts/PFBeauSansPro-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PFBeauSansPro-Light.ttf') format('truetype'),
+  url('../fonts/PFBeauSansPro-Light.woff') format('woff');
   font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
-  font-family: 'OpenSans-Light';
-  src: url('../fonts/OpenSans-Light.eot');
-  src: local('../fonts/OpenSans Light'), local('OpenSans-Light'),
-  url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/OpenSans-Light.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'PFBeauSansPro-SemiBold';
+  src: url('../fonts/PFBeauSansPro-SeBold.eot');
+  src: url('../fonts/PFBeauSansPro-SeBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PFBeauSansPro-SeBold.ttf') format('truetype'),
+  url('../fonts/PFBeauSansPro-SeBold.woff') format('woff');
   font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'PFBeauSansPro-Bold';
+  src: url('../fonts/PFBeauSansPro-Bold.eot');
+  src: url('../fonts/PFBeauSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PFBeauSansPro-Bold.ttf') format('truetype'),
+  url('../fonts/PFBeauSansPro-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'PFBeauSansPro-Bbook';
+  src: url('../fonts/PFBeauSansPro-Book.eot');
+  src: url('../fonts/PFBeauSansPro-Book.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PFBeauSansPro-Book.ttf') format('truetype'),
+  url('../fonts/PFBeauSansPro-Bbook.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Regular.otf') format('opentype'),
+  url('../fonts/ProximaNova-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url('../fonts/ProximaNova-Light.eot');
+  src: url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Light.otf') format('opentype'),
+  url('../fonts/ProximaNova-Light.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url('../fonts/ProximaNova-Bold.eot');
+  src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Bold.otf') format('opentype'),
+  url('../fonts/PFBeauSansPro-Reg.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
 }
