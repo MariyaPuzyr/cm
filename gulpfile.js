@@ -36,7 +36,7 @@ const paths = {
     watch: "./src/styles/**/*.scss"
   },
   scripts: {
-    src: "./src/js/main.js",
+    src: "./src/js/*.js",
     dist: "./dist/js/",
     watch: "./src/js/**/*.js"
   },
@@ -53,17 +53,6 @@ const paths = {
     src: "./src/img/svg/*.svg",
     dist: "./dist/img/sprites/",
     watch: "./src/img/svg/*.svg"
-  },
-  audio: {
-    src: "./src/audio/**",
-    dist: "./dist/audio/",
-    watch: "./src/audio/"
-  },
-  frontend: {
-    img: "../public/img",
-    js: "../public/js",
-    fonts: "../public/fonts",
-    css: "../public/styles"
   }
 };
 /* ==================== */
@@ -123,7 +112,7 @@ gulp.task('styles', function () {
 
 gulp.task('scripts', function () {
   return gulp.src([paths.scripts.src])
-      .pipe(concat('main.min.js'))
+      .pipe(concat('common.min.js'))
       .pipe(gulp.dest(paths.scripts.dist))
       .pipe(debug({
         "title": "JS files"
@@ -135,7 +124,6 @@ gulp.task('main-libs', function () {
   return gulp.src([
     './node_modules/jquery/dist/jquery.min.js',
     './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
-    './src/js/plyr.js',
   ])
       .pipe(concat('main-libs.min.js'))
       .pipe(gulp.dest(paths.scripts.dist))
@@ -195,34 +183,6 @@ gulp.task('fonts', function () {
         "title": "Copy fonts:"
       }));
 });
-gulp.task('audio', function () {
-  return gulp.src([paths.audio.src])
-      .pipe(gulp.dest(paths.audio.dist))
-      .pipe(debug({
-        "title": "copy audio files:"
-      }));
-});
-/* COPY FILES TASK */
-gulp.task('copy-styles', function () {
-  return gulp.src('./dist/styles/**')
-      .pipe(gulp.dest(paths.frontend.css))
-});
-gulp.task('copy-images', function () {
-  return gulp.src('./dist/img/**')
-      .pipe(gulp.dest(paths.frontend.img))
-});
-gulp.task('copy-js', function () {
-  return gulp.src('./dist/js/**')
-      .pipe(gulp.dest(paths.frontend.js))
-});
-gulp.task('copy-fonts', function () {
-  return gulp.src('./dist/fonts/**')
-      .pipe(gulp.dest(paths.frontend.fonts))
-});
-gulp.task('copy-files',
-    gulp.series(['copy-styles', 'copy-images', 'copy-js', 'copy-fonts'])
-);
-/* COPY FILES TASK END */
 
 gulp.task('watch',
     gulp.series([
@@ -231,7 +191,6 @@ gulp.task('watch',
           'scripts',
           'images',
           'fonts',
-          'audio',
           'sprites',
           'main-libs'
         ],
