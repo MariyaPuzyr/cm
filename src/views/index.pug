@@ -3,7 +3,13 @@ block variables
   - var title = "City Mall"
 
 block content
-  main
+  .container
+    .fixed-bg
     include ./includes/header
+    include ./sections/main-banner
+    include ./sections/map-info
+    include ./sections/discount
+    include ./sections/news
+    include ./sections/seo
 
-  include ./includes/footer
+    include ./includes/footer
