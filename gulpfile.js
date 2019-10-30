@@ -96,7 +96,7 @@ gulp.task('styles', function () {
   return gulp.src(paths.styles.src)
       .pipe(plumber())
       .pipe(sass())
-      .pipe(groupmediaqueries())
+      // .pipe(groupmediaqueries())
       .pipe(rename({suffix: '.min'}))
       .pipe(plumber.stop())
       .pipe(autoprefixer({
