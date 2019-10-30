@@ -10469,6 +10469,7 @@ ul {
 .map-info--maps {
   background: #ebe7de url("../img/svg/map.svg") no-repeat center bottom;
   height: 805px;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10716,10 +10717,6 @@ ul {
       font-size: 32px; }
 
 .flex__cell {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -13192,7 +13189,8 @@ ul {
   header, header.hover, .fixed-header header {
     padding: 0 20px !important; }
     header .header-top, header.hover .header-top, .fixed-header header .header-top {
-      width: 100%; }
+      width: 100%;
+      padding-right: 0; }
       header .header-top .logo, header.hover .header-top .logo, .fixed-header header .header-top .logo {
         width: 149px;
         height: 44px; }
