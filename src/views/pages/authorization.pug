@@ -1,0 +1,42 @@
+extends ../extends/layout
+block variables
+  - var title = "Login page - City Mall"
+
+block content
+  .full-width
+    .privacy-policy__fon
+      .container
+        .fixed-bg
+        header
+          .container
+            .row
+              .header-top
+                .column-menu
+                  a.logo(href='index.html')
+                .column.hidden-xs
+                  ul.nav
+                    li.callback__title Обратный звонок
+                    li.callback__phone 8 (495) 480 86 65
+        .fixed-content
+          section.company--top
+            .row
+              .col-md-6.col-md-offset-3.col-sm-6.col-sm-offset-3.col-xs-12
+                .form-authorization
+                  form.form-horizontal
+                    fieldset
+                      .form-authorization__title Личный кабинет
+                      .form-authorization__descr Авторизация
+                      .form-group
+                        label.col-md-2.control-label(for='login') Логин
+                        .col-md-10.col-sm-10.col-xs-12
+                          input#login.form-control(name='login', type='text', placeholder='', required='')
+                      .form-group
+                        label.col-md-2.control-label(for='passwordinput') Пароль
+                        .col-md-10.col-sm-10.col-xs-12
+                          input#passwordinput.form-control(name='passwordinput', type='password', placeholder='', required='')
+                      .form-group
+                        label.col-md-2.control-label(for='singlebutton')
+                        .col-md-10.col-sm-10.col-xs-12.form-authorization__btn
+                          button#singlebutton.btn(name='singlebutton') Войти
+                          a.remember-pass(href='#') Напомнить пароль
+    include ../includes/footer
