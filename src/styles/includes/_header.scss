@@ -90,10 +90,6 @@ header {
       .btn-nav {
         background: transparent;
         border: none;
-        -webkit-transition: all .5s ease;
-        -moz-transition: all .5s ease;
-        -ms-transition: all .5s ease;
-        -o-transition: all .5s ease;
         transition: all .5s ease;
         cursor: pointer;
         z-index: 99999;
@@ -107,10 +103,6 @@ header {
           width: 22px;
           height: 2px;
           background-color: #FFFFFF;
-          -webkit-transition: all .7s ease;
-          -moz-transition: all .7s ease;
-          -ms-transition: all .7s ease;
-          -o-transition: all .7s ease;
           transition: all .7s ease;
           z-index: 999999;
         }
@@ -131,17 +123,9 @@ header {
           background-color: rgba(#572642, 0.55);
         }
         .top {
-          -webkit-transform: translateY(5px) rotateZ(45deg);
-          -moz-transform: translateY(5px) rotateZ(45deg);
-          -ms-transform: translateY(5px) rotateZ(45deg);
-          -o-transform: translateY(5px) rotateZ(45deg);
           transform: translateY(5px) rotateZ(45deg);
         }
         .bottom {
-          -webkit-transform: translateY(-5px) rotateZ(-45deg);
-          -moz-transform: translateY(-5px) rotateZ(-45deg);
-          -ms-transform: translateY(-5px) rotateZ(-45deg);
-          -o-transform: translateY(-5px) rotateZ(-45deg);
           transform: translateY(-5px) rotateZ(-45deg);
         }
         .middle {
@@ -160,10 +144,12 @@ header {
   }
   .header-body {
     display: none;
+    width: 100%;
     .search-field {
       margin-top: 30px;
       display: flex;
       padding-bottom: 10px;
+      width: 100%;
       &.offtop {
         margin-top: 80px;
       }
@@ -186,10 +172,14 @@ header {
           font-family: $font-title-semi-bold;
           background-color: transparent;
           font-size: 16px;
-          img {
+          &::after {
+            border: none;
+            margin-left: 8px;
+            transition: .3s;
+            background: url('../img/arrows-menu.png') no-repeat center;
+            background-size: cover;
             width: 9px;
             height: 6px;
-            margin-left: 8px;
           }
           span {
             display: inline-block;
@@ -296,7 +286,6 @@ header {
     }
     .navbar-form {
       margin: 0;
-      height: 30px;
       border-radius: 2px;
       .input-group {
         width: 100%;

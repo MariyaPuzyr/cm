@@ -6,12 +6,12 @@ header
           a.logo(href='index.html')
           .menu-nav
             .menu-header
-              .menu-header--title.hidden-xs Меню
+              .menu-header--title.d-none.d-md-block Меню
               button.btn-nav
                 span.icon-bar.top
                 span.icon-bar.middle
                 span.icon-bar.bottom
-        .column.hidden-xs
+        .column.d-none.d-md-block
           ul.nav
             li.callback__title Обратный звонок
             li.callback__phone 8 (495) 480 86 65
@@ -20,9 +20,7 @@ header
           .col-md-12.col-xs-12
             ul.nav
               li.button-dropdown
-                a.dropdown-toggle(href='javascript:void(0)')
-                  | Компания
-                  img(src='./img/arrows-menu.png', alt='')
+                a.dropdown-toggle(href='#') Компания
                 ul.dropdown-menu
                   li
                     a(href='#') Услуги компании
@@ -35,9 +33,7 @@ header
                   li
                     a(href='#')  Вакансии
               li.button-dropdown
-                a.dropdown-toggle(href='javascript:void(0)')
-                  | Объекты
-                  img(src='./img/arrows-menu.png', alt='')
+                a.dropdown-toggle(href='#') Объекты
                 ul.dropdown-menu
                   li
                     a(href='#') Офисы
@@ -73,7 +69,7 @@ header
                       | Избранное
                   li
                     a.check-price(href='#') Узнать цену аренды
-            .column.hidden-lg.hidden-sm.hidden-md
+            .column.d-block.d-md-none
               ul.nav
                 li.callback__title Обратный звонок
                 li.callback__phone 8 (495) 480 86 65

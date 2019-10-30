@@ -839,7 +839,7 @@
           a {
             font-size: 24px;
             height: 50px;
-            img {
+            &::after {
               width: 14px;
               height: 9px;
             }
@@ -869,6 +869,7 @@
       }
       .navbar-form {
         height: 50px;
+        padding: 10px 15px;
         display: flex;
         align-items: center;
         .input-group {
