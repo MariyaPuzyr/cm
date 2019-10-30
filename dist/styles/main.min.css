@@ -10575,6 +10575,312 @@ ul {
   background: url("../img/small-arrow.png") no-repeat center -9px;
 }
 
+.contact__cooperation__field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.contact__cooperation__field textarea {
+  resize: none;
+}
+
+.contact__cooperation__field input,
+.contact__cooperation__field textarea {
+  background-color: transparent;
+  border-color: #c9c7c7;
+  border-style: none none solid;
+  border-width: 0 0 1px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 16px;
+  color: #000000;
+  font-family: "ProximaNova-Regular";
+  height: 40px;
+}
+
+.contact__cooperation__field input:focus,
+.contact__cooperation__field textarea:focus {
+  outline: 0;
+}
+
+.contact__cooperation__field input:focus ~ span,
+.contact__cooperation__field textarea:focus ~ span {
+  -webkit-transition: all 0.75s ease;
+  -o-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+  width: 100%;
+}
+
+.contact__cooperation__field input:focus ~ label,
+.contact__cooperation__field input:valid ~ label,
+.contact__cooperation__field textarea:focus ~ label,
+.contact__cooperation__field textarea:valid ~ label {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 1;
+  color: #808080;
+  font-size: 14px;
+  top: 7px;
+}
+
+.contact__cooperation__field input:invalid,
+.contact__cooperation__field textarea:invalid {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.contact__cooperation__field input ~ span,
+.contact__cooperation__field textarea ~ span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 0;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  background: #7ac143;
+  display: block;
+}
+
+.contact__cooperation__field label {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: "ProximaNova-Regular";
+  pointer-events: none;
+}
+
+.contact__cooperation__field.error input[type="email"]:invalid ~ label {
+  color: #808080;
+  font-size: 14px;
+  top: 7px;
+}
+
+.contact__cooperation__field.error input,
+.contact__cooperation__field.error textarea {
+  border-bottom: 1px solid #d32f2f;
+}
+
+.contact__cooperation__field.error .has-error {
+  position: relative;
+  color: #d32f2f;
+  font-size: 14px;
+  font-family: "ProximaNova-Regular";
+  width: 100%;
+  background: none;
+  white-space: nowrap;
+}
+
+#map {
+  z-index: 1;
+  width: 100%;
+  height: 490px;
+}
+
+.errors {
+  margin: 150px auto 0;
+}
+
+.errors__title {
+  margin-bottom: 45px;
+}
+
+.errors__title h1 {
+  font-size: 36px;
+  line-height: 77px;
+  color: #572642;
+  font-family: "PFBeauSansPro-Regular";
+  margin: 0;
+  padding-left: 10px;
+}
+
+.errors__title img {
+  width: 391px;
+  max-width: 100%;
+}
+
+.errors__body {
+  margin-top: 70px;
+  margin-bottom: 45px;
+}
+
+.errors__body h4 {
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 26px;
+  color: #372d31;
+  font-family: "PFBeauSansPro-Regular";
+}
+
+.errors__body p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 25px;
+  color: #372d31;
+  font-family: "ProximaNova-Light";
+}
+
+.errors__link {
+  margin-top: 30px;
+}
+
+.errors__link ul li a {
+  text-decoration: underline;
+  color: #7ac143;
+  font-size: 20px;
+  line-height: 26px;
+  font-family: "ProximaNova-Regular";
+  margin-bottom: 27px;
+  display: table;
+}
+
+.errors__form {
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+
+.errors__form label {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: normal;
+  color: #000000;
+  font-family: "ProximaNova-Regular";
+  padding-top: 0 !important;
+  text-align: left !important;
+}
+
+.errors__form .form-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.errors__form .form-group .form-control {
+  width: 100%;
+  height: 33px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  padding: 0 10px;
+  resize: none;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  color: #000000;
+  font-family: "ProximaNova-Regular";
+  font-size: 14px;
+}
+
+.errors__form .form-group .form-control:invalid {
+  border: 1px solid rgba(220, 56, 24, 0.5);
+  background-color: rgba(222, 63, 63, 0.03);
+}
+
+.errors__form .form-group textarea.form-control {
+  height: 145px;
+  padding: 10px;
+}
+
+.errors__form .form-group .support-send-btn {
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "ProximaNova-Regular";
+  background-color: #7ac143;
+  padding: 0 20px;
+  height: 36px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.errors__form .form-group .support-send-btn:hover {
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
+}
+
+.errors__form .form-group.textarea {
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.errors__form .bootstrap-select {
+  width: 100% !important;
+}
+
+.errors__form .bootstrap-select .caret {
+  border: none;
+  background-image: url("../img/arrows-menu.png");
+  -webkit-background-size: 11px 7px;
+  background-size: 11px 7px;
+  width: 11px;
+  height: 7px;
+}
+
+.errors__form .bootstrap-select button:focus {
+  outline: none !important;
+}
+
+.errors__form .form-cv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.errors__form .form-cv__btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 22px;
+  color: #7ac143;
+  font-family: "ProximaNova-Regular";
+  margin: 0;
+}
+
+.errors__form .form-cv__btn i {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  padding-right: 5px;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
