@@ -1,4 +1,3 @@
-/* main-banner */
 .main-banner {
   height: 100vh;
   &__slider {
@@ -62,7 +61,7 @@
         button {
           &:before {
             font-size: 7px;
-            transition: all 0.3s ease;
+            transition: all .3s ease;
             color: $default;
             opacity: 1;
           }

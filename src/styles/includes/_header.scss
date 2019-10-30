@@ -12,13 +12,12 @@ header {
     background: $default;
     width: 100%;
     padding: 0 80px;
-    //box-shadow: 0 0 3px rgba(#000, .3);
     .header-top {
       width: 100%;
       color: #1a1a1a;
       padding-right: 0;
       .logo {
-        background-image: url('../img/logo-active.svg');
+        background-image: url('../img/svg/logo-active.svg');
       }
       .menu-header {
         .btn-nav {
@@ -48,6 +47,10 @@ header {
       &__phone {
         font-size: 20px;
         font-family: $font-title-bbold;
+      }
+      &__title,
+      &__phone {
+        width: 100%;
       }
     }
   }
@@ -340,7 +343,7 @@ header {
       width: 100%;
       color: #1a1a1a;
       .logo {
-        background-image: url('../img/logo-active.svg');
+        background-image: url('../img/svg/logo-active.svg');
       }
     }
     .nav {
