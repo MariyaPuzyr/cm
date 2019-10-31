@@ -5,7 +5,7 @@ a.to-top(href='#0')
     path(d='M2,12.9l6.1-6l6.1,6l1.9-1.9L8,3.1L0.1,11L2,12.9z')
 // footer
 footer.footer
-  .row.hidden-sm.hidden-xs
+  .row.d-none.d-md-flex
     .col-lg-6.col-sm-6.col-md-6.col-xs-12
       .row
         .col-ld-4.col-sm-4.col-md-4.col-xs-12
@@ -95,21 +95,20 @@ footer.footer
               i.icon-star
               span Избранное
             .cost-renting Запрос на расчет стоимости аренды
-  .row
-    .copyright
-      .hidden-lg.hidden-md.copyright-logo
-        .copyright__info
-          img.footer-logo(src='./img/svg/logo-active.svg', alt='')
-      .mobile-reverse
-        .copyright__info
-          img.footer-logo.hidden-xs.hidden-sm(src='./img/svg/logo-active.svg', alt='')
-          .copyright-text © ООО “СитиЭндМолз” Москва, ул. Ленинская Слобода, д.26
-        .developers.hidden-sm.hidden-xs
-          a(href='#')
-            span Разработано idem.agency
-            img(src='./img/idem-logo.jpg', alt='')
-        .contact-info.hidden-lg.hidden-md
-          .contact-phone +7 (495) 480 86 65
-          a.write-to-us(href='#')
-            i.icon-mail
-            span Написать нам
+  .copyright
+    .d-flex.d-md-none.copyright-logo
+      .copyright__info
+        img.footer-logo(src='./img/svg/logo-active.svg', alt='')
+    .mobile-reverse
+      .copyright__info
+        img.footer-logo.d-none.d-md-flex(src='./img/svg/logo-active.svg', alt='')
+        .copyright-text © ООО “СитиЭндМолз” Москва, ул. Ленинская Слобода, д.26
+      .developers.d-none.d-md-flex
+        a(href='#')
+          span Разработано idem.agency
+          img(src='./img/idem-logo.jpg', alt='')
+      .contact-info.d-flex.d-md-none
+        .contact-phone +7 (495) 480 86 65
+        a.write-to-us(href='#')
+          i.icon-mail
+          span Написать нам

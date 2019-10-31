@@ -144,13 +144,11 @@
       margin: 0;
       li {
         padding-bottom: 15px;
-        &.active {
-          a {
-            border: 1px solid transparent !important;
-            background-color: rgba(87, 38, 66, 0.2) !important;
-            span {
-              border-bottom: 1px dotted transparent !important;
-            }
+        .active {
+          border: 1px solid transparent !important;
+          background-color: rgba(87, 38, 66, 0.2) !important;
+          span {
+            border-bottom: 1px dotted transparent !important;
           }
           &:hover, &:active {
             a {
@@ -170,8 +168,7 @@
           font-family: $font-light;
           border: 1px solid transparent !important;
           transition: all 0.3s ease;
-          padding-left: 9px;
-          padding-right: 9px;
+          padding: 10px 9px;
           i {
             display: flex;
             font-size: 15px;
@@ -195,6 +192,7 @@
     .form-inline {
       display: flex;
       align-items: baseline;
+      flex-wrap: nowrap;
       &.error {
         .form-control {
           border-bottom: 1px solid #dc3818;
@@ -206,6 +204,7 @@
       font-size: 14px;
       font-family: $font;
       color: $primary;
+      justify-content: start;
     }
     .form-control {
       width: 100%;
@@ -239,6 +238,9 @@
         box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
         color: $default;
       }
+    }
+    .tab-content .tab-pane.active {
+      opacity: 1;
     }
   }
   .copyright {

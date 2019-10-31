@@ -5,9 +5,9 @@ $font-title-semi-bold: 'PFBeauSansPro-SemiBold';
 $font-title-bold: 'PFBeauSansPro-Bold';
 $font-title-bbold: 'PFBeauSansPro-Bbook';
 
-$font: 'ProximaNova-Regular';
-$font-light: 'ProximaNova-Light';
-$font-bold: 'ProximaNova-Bold';
+$font: 'ProximaNova-Regular', sans-serif;
+$font-light: 'ProximaNova-Light', sans-serif;
+$font-bold: 'ProximaNova-Bold', sans-serif;
 
 /* font sizes*/
 $size_smaller_font: 10px;
