@@ -11,6 +11,13 @@
 </head>
 <body>
 <?php echo '<p>Hello, everyone!!!</p>';?>
-<?php phpinfo(); ?>
+<?php echo $_SERVER['HTTP_USER_AGENT'];?>
+
+
+<?php
+if (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== FALSE) {
+  echo '<p>Вы используете Internet Explorer.<br /></p>';
+}
+?>
 </body>
 </html>
