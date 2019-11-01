@@ -17,8 +17,11 @@ const dest = require('gulp-dest'),
     plumber = require('gulp-plumber'),
     debug = require('gulp-debug'),
     concat = require('gulp-concat'),
+    php = require('gulp-connect-php'),
     clean = require('gulp-clean');
 
+
+var reload = browsersync.reload;
 /* Path const */
 const paths = {
   views: {
@@ -202,3 +205,25 @@ gulp.task('build',
     gulp.series(['styles', 'scripts', 'images', 'main-libs'])
 );
 gulp.task('default', gulp.series('watch'));
+
+gulp.task('start-php', function () {
+  php.server({
+    // a standalone PHP server that browsersync connects to via proxy
+    port: 8000,
+    keepalive: true
+  }, function () {
+    browsersync({
+      proxy: '127.0.0.1:8000'
+    });
+  });
+
+  gulp.watch('./dist/*.html').on('change', function () {
+    reload();
+  });
+  gulp.watch('./dist/*.php').on('change', function () {
+    reload();
+  });
+
+  // the CSS task does it's own reloading
+  gulp.watch(paths.styles.watch, gulp.series('styles'));
+});
