@@ -1,0 +1,128 @@
+.fixed-content
+  section.company-services.company--top
+    .row
+      .col-md-5.col-sm-5.col-xs-12
+        .company__title
+          h1 Личный кабинет
+          p.personal-office__descr
+            | Общество с ограниченной ответственностью «Управляющая компания Глобал
+            | сервис»
+          p.personal-office__descr Проект: БП «Союз»
+          a.change-password(href='#') Изменить пароль
+      .col-md-7.col-sm-7.col-xs-12
+        .money-info
+          .money-info__prepayment
+            .money-info__prepayment--title Аванс:
+            .money-info__prepayment--info
+              | 1 250 000, 00
+              span ₽
+          .money-info__prepayment
+            .money-info__prepayment--title Задолжность:
+            .money-info__prepayment--info
+              | 0, 00
+              span ₽
+  section.menu-table-info
+    .row
+      .col-md-3.col-sm-3.col-xs-12
+        .menu-section
+          a.menu-section__messages(href='#')
+            img(src='img/bell-ico.png', alt='')
+            | У вас 3 новых сообщения
+          ul
+            li
+              a(href='#') Заявки
+            li
+              a(href='#')
+                span Подать заявк
+            li
+              a(href='#')
+                span Отследить статус
+            li
+              a(href='#') Взаиморасчеты
+            li.active
+              a(href='#')
+                span К оплате
+            li
+              a(href='#')
+                span Задолженность
+            li
+              a(href='#') Бухгалтерские документы
+            li
+              a(href='#')
+                span Закрывающие документы
+            li
+              a(href='#')
+                span Счета
+            li
+              a(href='#') Образцы документов
+            li
+              a(href='#') Информация о вашей компании
+            li
+              a(href='#') Контакты
+          .estimate-work--cover
+            a.estimate-work(href='#') Оценить работу УК
+      .col-md-9.col-sm-9.col-xs-12
+        .table-section
+          .table-responsive
+            table.table
+              thead
+                tr
+                  th Номер договора
+                  th Период
+                  th Тип расчетов
+                  th.text-right
+                    | К оплате
+                    span ₽
+                  th.text-right Срок оплаты
+              tbody
+                tr
+                  td 637/1
+                  td Окт 2015
+                  td Штраф за нарушение условий договора
+                  td 4 567.81
+                  td 01.23.2006
+                tr
+                  td
+                  td Сен 2015
+                  td.rent Переменная часть за аренду нежилых помещений
+                  td 210.00
+                  td 01.23.2006
+                tr
+                  td
+                  td Сен 2015
+                  td.rent Переменная часть за аренду нежилых помещений
+                  td 604.00
+                  td 01.23.2006
+          .total
+            .total__payment
+              | Итого к оплате:
+              span.result 5 123. 00
+              span ₽
+            .including-debt
+              | В том числе задолженность:
+              span.result 5 123. 00
+              span ₽
+          .table-feedback.send-cv
+            p Уважаемый клиент!
+              br
+              | Если у вас есть вопросы напишите нам, мы ответим в течение дня.
+            .errors__form
+              form
+                fieldset
+                  .form-group
+                    label.col-md-2.col-sm-3.col-xs-12.control-label(for='support-phone') Тема
+                    .col-md-5.col-sm-7.col-xs-12
+                      input#support-phone.form-control(name='support-phone', type='text', placeholder='')
+                  .form-group
+                    label.col-md-2.col-sm-3.col-xs-12.control-label(for='support-message') Сообщение
+                    .col-md-5.col-sm-7.col-xs-12
+                      textarea#support-message.form-control
+                  .form-group
+                    .col-md-offset-2.col-md-5.col-sm-offset-3.col-sm-7.col-xs-12
+                      .form-cv
+                        button#send.btn.support-send-btn(type='submit', name='support-send', data-toggle='modal', data-target='#success-cv') Отправить
+                        #fileselector
+                          label.form-cv__btn(for='upload-file-selector')
+                            input#upload-file-selector(type='file')
+                            i.icon-skrepka
+                            | Прикрепить резюме

@@ -1,0 +1,76 @@
+.fixed-content
+  section.company--top
+    .row
+      .col-md-3.col-sm-3.col-xs-12
+        .company__title
+          h1 Вакансии
+      .col-md-9.col-sm-9.col-xs-12
+        .company__title.tenders
+          .row
+            .col-md-12
+              h3
+                | В связи с динамичным развитием компании и увеличением
+                | числа объектов, City&Malls PFM регулярно расширяет штат высококвалифицированных специалистов,
+                | заинтересованных в профессиональном росте и постоянном совершенствовании своих навыков и умений.
+              h5
+                | Компания предлагает неограниченные возможности для самореализации, высокий уровень компенсации
+                | труда,
+                | развитую корпоративную культуру и комфортную атмосферу внутри коллектива, состоящего исключительно
+                | из
+                | настоящих профессионалов своего дела.
+          .open-vacancy
+            .row
+              .col-md-12
+                h2 Список открытых вакансий
+              .col-md-6.col-sm-6.col-xs-12
+                .vacancy-info
+                  i.icon-mail
+                  |  hr@cmpfm.ru
+                p Электронный адрес для резюме, если вы хотите стать частью нашей команды
+            .row
+              .col-md-8.col-sm-6.col-xs-12
+                .vacancy-info
+                  i.icon-phone
+                  |  + 7 (495) 803 33 38
+                p Телефонный номер для обращения за дополнительной информацией в управление по работе с персоналом City&Malls PFM
+          .send-cv
+            .row
+              .col-md-12
+                h1 Отправить резюме
+            .errors__form
+              form
+                fieldset
+                  .form-group
+                    label.col-md-3.col-sm-3.col-xs-12.control-label(for='activity-field') Область деятельности
+                    .col-md-5.col-sm-8.col-xs-12
+                      .bs-docs-example
+                        select#activity-field.selectpicker(name='activity-field', style='display: none;')
+                          option 1
+                          option 2
+                          option 3
+                  .form-group
+                    label.col-md-3.col-sm-3.col-xs-12.control-label(for='support-name') Имя
+                    .col-md-5.col-sm-8.col-xs-12
+                      input#support-name.form-control(name='support-name', type='text', placeholder='')
+                  .form-group
+                    label.col-md-3.col-sm-3.col-xs-12.control-label(for='support-phone') Телефон
+                    .col-md-5.col-sm-8.col-xs-12
+                      input#support-phone.form-control(name='support-phone', type='text', placeholder='')
+                  .form-group
+                    label.col-md-3.col-sm-3.col-xs-12.control-label(for='support-email') E-mail
+                    .col-md-5.col-sm-8.col-xs-12
+                      input#support-email.form-control(name='support-email', type='email', placeholder='', required='')
+                  .form-group.textarea
+                    label.col-md-3.col-sm-3.col-xs-12.control-label(for='support-message')
+                      | Cообщение, если необходимо
+                    .col-md-8.col-sm-8.col-xs-12
+                      textarea#support-message.form-control
+                  .form-group
+                    .col-md-offset-3.col-md-8.col-sm-offset-3
+                      .form-cv
+                        button#send.btn.support-send-btn(type='submit', name='support-send', data-toggle='modal', data-target='#success-cv') Отправить
+                        #fileselector
+                          label.form-cv__btn(for='upload-file-selector')
+                            input#upload-file-selector(type='file')
+                            i.icon-skrepka
+                            | Прикрепить резюме
