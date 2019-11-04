@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Login page - City Mall</title>
+    <title>Recovery page - City Mall</title>
     <meta name="theme-color" content="#161719">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -18,12 +18,75 @@
             <div class="container">
               <div class="row">
                 <div class="header-top">
-                  <div class="column-menu"><a class="logo" href="index.html"></a></div>
-                  <div class="column hidden-xs">
+                  <div class="column-menu"><a class="logo" href="index.html"></a>
+                    <div class="menu-nav">
+                      <div class="menu-header">
+                        <div class="menu-header--title d-none d-md-block">Меню</div>
+                        <button class="btn-nav"><span class="icon-bar top"></span><span class="icon-bar middle"></span><span class="icon-bar bottom"></span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column d-none d-md-block">
                     <ul class="nav">
                       <li class="callback__title">Обратный звонок</li>
                       <li class="callback__phone">8 (495) 480 86 65</li>
                     </ul>
+                  </div>
+                </div>
+                <div class="header-body">
+                  <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                      <ul class="nav">
+                        <li class="button-dropdown"><a class="dropdown-toggle" href="#">Компания</a>
+                          <ul class="dropdown-menu">
+                            <li><a href="company.html">Услуги компании</a></li>
+                            <li><a href="teams.html"> Команда</a></li>
+                            <li><a href="tenders.html"> Тендеры</a></li>
+                            <li><a href="news-list.html"> Новости</a></li>
+                            <li><a href="vacancy.html"> Вакансии</a></li>
+                          </ul>
+                        </li>
+                        <li class="button-dropdown"><a class="dropdown-toggle" href="#">Объекты</a>
+                          <ul class="dropdown-menu">
+                            <li><a href="object-list.html">Офисы</a></li>
+                            <li><a href="object-list.html"> Торговые площади</a></li>
+                            <li><a href="object-list.html"> Street retail</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="rent.html">Аренда помещений</a></li>
+                        <li><a href="special-list.html">Спецпредложения</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li class="personal-office"><a href="personal.html"><i class="icon-man"></i><span>Личный кабинет</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="search-field">
+                      <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                        <form class="navbar-form" role="search">
+                          <div class="input-group add-on">
+                            <div class="input-group-btn">
+                              <button class="btn" type="submit"><img src="./img/search-ico.png" alt=""></button>
+                            </div>
+                            <input class="form-control" id="srch-term" placeholder="Search" name="srch-term" type="text">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                        <div class="menu-buttons">
+                          <ul>
+                            <li><a class="add-to-favorites" href="#"><i class="icon-star"></i>Избранное</a></li>
+                            <li><a class="check-price" href="#">Узнать цену аренды</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="column d-block d-md-none">
+                        <ul class="nav">
+                          <li class="callback__title">Обратный звонок</li>
+                          <li class="callback__phone">8 (495) 480 86 65</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -37,23 +100,34 @@
                     <form class="form-horizontal">
                       <fieldset>
                         <div class="form-authorization__title">Личный кабинет</div>
-                        <div class="form-authorization__descr">Авторизация</div>
+                        <div class="form-authorization__descr">Восстановление пароля</div>
                         <div class="form-group">
-                          <label class="col-md-2 control-label" for="login">Логин</label>
-                          <div class="col-md-10 col-sm-10 col-xs-12">
+                          <label class="col-md-3 control-label" for="login">Логин или ИНН</label>
+                          <div class="col-md-9 col-sm-9 col-xs-12">
                             <input class="form-control" id="login" name="login" type="text" placeholder="" required="">
                           </div>
                         </div>
                         <div class="form-group">
-                          <label class="col-md-2 control-label" for="passwordinput">Пароль</label>
-                          <div class="col-md-10 col-sm-10 col-xs-12">
-                            <input class="form-control" id="passwordinput" name="passwordinput" type="password" placeholder="" required="">
+                          <label class="col-md-3 control-label" for="fio">Ф.И.О.</label>
+                          <div class="col-md-9 col-sm-9 col-xs-12">
+                            <input class="form-control" id="fio" name="fio" type="text" placeholder="" required="">
                           </div>
                         </div>
                         <div class="form-group">
-                          <label class="col-md-2 control-label" for="singlebutton"></label>
-                          <div class="col-md-10 col-sm-10 col-xs-12 form-authorization__btn">
-                            <button class="btn" id="singlebutton" name="singlebutton">Войти</button><a class="remember-pass" href="recovery.html">Напомнить пароль</a>
+                          <label class="col-md-3 control-label" for="email">E-mail</label>
+                          <div class="col-md-9 col-sm-9 col-xs-12">
+                            <input class="form-control" id="email" name="email" type="email" placeholder="" required="">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="col-md-3 control-label" for="singlebutton"></label>
+                          <div class="col-md-9 col-sm-9 col-xs-12 form-authorization__btn">
+                            <button class="btn" id="singlebutton" name="singlebutton">Отправить</button>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-2 col-xs-12 text-center">
+                            <p>Если у вас остались вопросы, свяжитесь с нами по телефону контакт-центра 7 (495) 803 33 03</p>
                           </div>
                         </div>
                       </fieldset>

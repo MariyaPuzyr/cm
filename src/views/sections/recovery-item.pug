@@ -1,0 +1,28 @@
+.fixed-content
+  section.company--top
+    .row
+      .col-md-6.col-md-offset-3.col-sm-6.col-sm-offset-3.col-xs-12
+        .form-authorization
+          form.form-horizontal
+            fieldset
+              .form-authorization__title Личный кабинет
+              .form-authorization__descr Восстановление пароля
+              .form-group
+                label.col-md-3.control-label(for='login') Логин или ИНН
+                .col-md-9.col-sm-9.col-xs-12
+                  input#login.form-control(name='login', type='text', placeholder='', required='')
+              .form-group
+                label.col-md-3.control-label(for='fio') Ф.И.О.
+                .col-md-9.col-sm-9.col-xs-12
+                  input#fio.form-control(name='fio', type='text', placeholder='', required='')
+              .form-group
+                label.col-md-3.control-label(for='email') E-mail
+                .col-md-9.col-sm-9.col-xs-12
+                  input#email.form-control(name='email', type='email', placeholder='', required='')
+              .form-group
+                label.col-md-3.control-label(for='singlebutton')
+                .col-md-9.col-sm-9.col-xs-12.form-authorization__btn
+                  button#singlebutton.btn(name='singlebutton') Отправить
+              .form-group
+                .col-md-9.col-md-offset-2.col-sm-9.col-sm-offset-2.col-xs-12.text-center
+                  p Если у вас остались вопросы, свяжитесь с нами по телефону контакт-центра 7 (495) 803 33 03
