@@ -1,0 +1,19 @@
+extends ../extends/layout
+block variables
+  - var title = "News list page - City Mall"
+
+block content
+  .full-width
+    .privacy-policy__fon
+      .container
+        .fixed-bg
+        include ../includes/header
+        .fixed-content
+          .company--top
+            .row
+              .col-md-12.col-sm-12.col-xs-12
+                .news-list
+                  h1 Новости и события
+        include ../sections/news-list-items
+
+    include ../includes/footer

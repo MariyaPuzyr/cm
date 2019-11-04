@@ -1,0 +1,123 @@
+extends ../extends/layout
+block variables
+  - var title = "News single page - City Mall"
+
+block content
+  .full-width
+    .news__fon
+      .container
+        .fixed-bg
+        include ../includes/header
+        .fixed-content
+          .company--top
+            .row
+              .col-md-7.col-sm-7.col-xs-12
+                .news-navigation
+                  a.link-back(href='#') К списку новостей
+                .news-body
+                  h2.news-body__title Деловой квартал «Симоновский» пополнился новым арендатором
+                  .news-body__date 22 июня
+                  .news-body__img
+                    img.img-responsive(src='img/events-1.jpg', alt='')
+                  .news-body__social
+                    // facebook
+                    .fb-like(data-layout='button_count', data-action='like', data-size='small', data-show-faces='false', data-share='false')
+                    // vk
+                    #vk_like
+                    script(type='text/javascript').
+                      VK.Widgets.Like("vk_like", {type: "button"});
+                    // twitter
+                    a.twitter-share-button(href='https://twitter.com/share', data-via='doublecemik', data-lang='ru') Твитнуть
+                    script.
+                      !function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                        if (!d.getElementById(id)) {
+                          js = d.createElement(s);
+                          js.id = id;
+                          js.src = p + '://platform.twitter.com/widgets.js';
+                          fjs.parentNode.insertBefore(js, fjs);
+                        }
+                      }(document, 'script', 'twitter-wjs');
+                  p.news-body__description
+                    | Promotion-кампания, вопреки мнению П.Друкера, интуитивно концентрирует
+                    | сублимированный повторный контакт. Бизнес-план, конечно, ригиден как никогда. Размещение естественно
+                    | индуцирует процесс стратегического планирования. Согласно предыдущему, клиентский спрос стабилизирует
+                    | ребрендинг, осознав маркетинг как часть производства.
+                    br
+                    br
+                    |                По мнению ведущих маркетологов, медиабизнес нейтрализует SWOT-анализ. Сегментация рынка, безусловно,
+                    |                создает пак-шот, работая над проектом. Рекламный бриф, не меняя концепции, изложенной выше,
+                    |                позиционирует продвигаемый медиамикс, повышая конкуренцию. Показ баннера уравновешивает имидж.
+                    br
+                    br
+                    |                Анализ рыночных цен сбалансирован. Позиционирование на рынке, как следует из вышесказанного, охватывает
+                    |                сублимированный процесс стратегического планирования, размещаясь во всех медиа. Общество потребления
+                    |                оправдывает медиамикс.
+                  .slider.news-list-slider
+                    div
+                      img(src='img/events-2.jpg', alt='')
+                    div
+                      img(src='img/events-1.jpg', alt='')
+                    div
+                      img(src='img/events-3.jpg', alt='')
+                    div
+                      img(src='img/photo-4.jpg', alt='')
+                    div
+                      img(src='img/364_6640.jpg', alt='')
+                  p.news-body__description
+                    | Promotion-кампания, вопреки мнению П.Друкера, интуитивно концентрирует
+                    | сублимированный повторный контакт. Бизнес-план, конечно, ригиден как никогда. Размещение естественно
+                    | индуцирует процесс стратегического планирования. Согласно предыдущему, клиентский спрос стабилизирует
+                    | ребрендинг, осознав маркетинг как часть производства.
+                    br
+                    br
+                    |                По мнению ведущих маркетологов, медиабизнес нейтрализует SWOT-анализ. Сегментация рынка, безусловно,
+                    |                создает пак-шот, работая над проектом. Рекламный бриф, не меняя концепции, изложенной выше,
+                    |                позиционирует продвигаемый медиамикс, повышая конкуренцию. Показ баннера уравновешивает имидж.
+                    br
+                    br
+                    |                Анализ рыночных цен сбалансирован. Позиционирование на рынке, как следует из вышесказанного, охватывает
+                    |                сублимированный процесс стратегического планирования, размещаясь во всех медиа. Общество потребления
+                    |                оправдывает медиамикс.
+                  .news-body__social
+                    .fb-like(data-layout='button_count', data-action='like', data-size='small', data-show-faces='false', data-share='false')
+                    #vk_like-2
+                    script(type='text/javascript').
+                      VK.Widgets.Like("vk_like-2", {type: "button"});
+                    a.twitter-share-button(href='https://twitter.com/share', data-via='doublecemik', data-lang='ru') Твитнуть
+                    script.
+                      !function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                        if (!d.getElementById(id)) {
+                          js = d.createElement(s);
+                          js.id = id;
+                          js.src = p + '://platform.twitter.com/widgets.js';
+                          fjs.parentNode.insertBefore(js, fjs);
+                        }
+                      }(document, 'script', 'twitter-wjs');
+                .news-navigation.news-article__navigation
+                  a.link-back(href='#')
+                    | <
+                    span Следующая новость
+                  a.link-back(href='#')
+                    span Предыдущая новость
+                    |  >
+              .col-md-4.col-md-offset-1.col-sm-4.col-sm-offset-1.col-xs-12
+                .recommended-news
+                  .recommended-news__also Читайте также
+                  .recommended-news__body
+                    .recommended-news__date 22 июня
+                    a.recommended-news__link(href='news.html') Деловой квартал «Симоновский» пополнился новым арендатором
+                    .recommended-news__description Группа компаний TEL заключила с УК City&Malls PFM договор
+                      | аренды помещений в Деловом квартале «Симоновский» общей площадью 890 кв.м...
+                  .recommended-news__body
+                    .recommended-news__date 22 июня
+                    a.recommended-news__link(href='news.html') Деловой квартал «Симоновский» пополнился новым арендатором
+                    .recommended-news__description Группа компаний TEL заключила с УК City&Malls PFM договор
+                      | аренды помещений в Деловом квартале «Симоновский» общей площадью 890 кв.м...
+                  .recommended-news__body
+                    .recommended-news__date 22 июня
+                    a.recommended-news__link(href='news.html') Деловой квартал «Симоновский» пополнился новым арендатором
+                    .recommended-news__description Группа компаний TEL заключила с УК City&Malls PFM договор
+                      | аренды помещений в Деловом квартале «Симоновский» общей площадью 890 кв.м...
+    include ../includes/footer
