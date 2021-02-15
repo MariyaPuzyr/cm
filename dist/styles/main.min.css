@@ -9171,7 +9171,8 @@ header {
   .fixed-header header, .full-width header {
     background: #ffffff;
     width: 100%;
-    padding: 0 80px; }
+    padding: 0 80px;
+    min-width: 100%; }
     .fixed-header header .header-top, .full-width header .header-top {
       width: 100%;
       color: #1a1a1a;
@@ -9530,7 +9531,8 @@ header {
   header.hover {
     background-color: #ffffff;
     width: 100%;
-    padding: 0 80px; }
+    padding: 0 80px;
+    min-width: 100%; }
     header.hover .header-top {
       width: 100%;
       color: #1a1a1a; }
@@ -14096,9 +14098,7 @@ ul {
     min-width: 1600px; }
   .company--top {
     padding-top: 175px; }
-  .fixed-header header, .hover {
-    min-width: 100%; }
-    .fixed-header header .nav, .fixed-header header .header-top, .hover .nav, .hover .header-top {
-      padding-right: 0; }
+  .fixed-header header .nav, .fixed-header header .header-top, .hover .nav, .hover .header-top {
+    padding-right: 0; }
   .full-width header {
     max-width: 100%; } }

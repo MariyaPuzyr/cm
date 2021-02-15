@@ -1,0 +1,75 @@
+header
+  .container
+    .row
+      .header-top
+        .column-menu
+          a.logo(href='index.html')
+          .menu-nav
+            .menu-header
+              .menu-header--title.d-none.d-md-block Меню
+              button.btn-nav
+                span.icon-bar.top
+                span.icon-bar.middle
+                span.icon-bar.bottom
+        .column.d-none.d-md-block
+          ul.nav
+            li.callback__title Обратный звонок
+            li.callback__phone 8 (495) 480 86 65
+      .header-body
+        .row
+          .col-md-12.col-xs-12
+            ul.nav
+              li.button-dropdown
+                a.dropdown-toggle(href='#') Компания
+                ul.dropdown-menu
+                  li
+                    a(href='company.html') Услуги компании
+                  li
+                    a(href='teams.html')  Команда
+                  li
+                    a(href='tenders.html')  Тендеры
+                  li
+                    a(href='news-list.html')  Новости
+                  li
+                    a(href='vacancy.html')  Вакансии
+              li.button-dropdown
+                a.dropdown-toggle(href='#') Объекты
+                ul.dropdown-menu
+                  li
+                    a(href='object-list.html') Офисы
+                  li
+                    a(href='object-list.html')  Торговые площади
+                  li
+                    a(href='object-list.html')  Street retail
+              li
+                a(href='rent.html') Аренда помещений
+              li
+                a(href='special-list.html') Спецпредложения
+              li
+                a(href='contacts.html') Контакты
+              li.personal-office
+                a(href='personal.html')
+                  i.icon-man
+                  span Личный кабинет
+        .row
+          .search-field
+            .col-lg-7.col-md-7.col-sm-12.col-xs-12
+              form.navbar-form(role='search')
+                .input-group.add-on
+                  .input-group-btn
+                    button.btn(type='submit')
+                      img(src='./img/search-ico.png', alt='')
+                  input#srch-term.form-control(placeholder='Search', name='srch-term', type='text')
+            .col-lg-5.col-md-5.col-sm-12.col-xs-12
+              .menu-buttons
+                ul
+                  li
+                    a.add-to-favorites(href='#')
+                      i.icon-star
+                      | Избранное
+                  li
+                    a.check-price(href='#') Узнать цену аренды
+            .column.d-block.d-md-none
+              ul.nav
+                li.callback__title Обратный звонок
+                li.callback__phone 8 (495) 480 86 65
